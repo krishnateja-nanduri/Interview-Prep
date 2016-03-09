@@ -13,6 +13,8 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>LinkedListOperations.cpp</itemPath>
+      <itemPath>MyLLOps.cpp</itemPath>
+      <itemPath>StackOp.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
                    displayName="Test Files"
@@ -38,6 +40,10 @@
       </compileType>
       <item path="LinkedListOperations.cpp" ex="false" tool="1" flavor2="0">
       </item>
+      <item path="MyLLOps.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="StackOp.cpp" ex="false" tool="1" flavor2="0">
+      </item>
     </conf>
     <conf name="Release" type="2">
       <toolsSet>
@@ -60,6 +66,10 @@
         </asmTool>
       </compileType>
       <item path="LinkedListOperations.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="MyLLOps.cpp" ex="false" tool="1" flavor2="0">
+      </item>
+      <item path="StackOp.cpp" ex="false" tool="1" flavor2="0">
       </item>
     </conf>
   </confs>

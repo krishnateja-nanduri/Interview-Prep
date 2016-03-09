@@ -35,7 +35,9 @@ OBJECTDIR=${CND_BUILDDIR}/${CND_CONF}/${CND_PLATFORM}
 
 # Object Files
 OBJECTFILES= \
-	${OBJECTDIR}/LinkedListOperations.o
+	${OBJECTDIR}/LinkedListOperations.o \
+	${OBJECTDIR}/MyLLOps.o \
+	${OBJECTDIR}/StackOp.o
 
 
 # C Compiler Flags
@@ -66,6 +68,16 @@ ${OBJECTDIR}/LinkedListOperations.o: LinkedListOperations.cpp
 	${MKDIR} -p ${OBJECTDIR}
 	${RM} "$@.d"
 	$(COMPILE.cc) -g  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/LinkedListOperations.o LinkedListOperations.cpp
+
+${OBJECTDIR}/MyLLOps.o: MyLLOps.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/MyLLOps.o MyLLOps.cpp
+
+${OBJECTDIR}/StackOp.o: StackOp.cpp 
+	${MKDIR} -p ${OBJECTDIR}
+	${RM} "$@.d"
+	$(COMPILE.cc) -g  -MMD -MP -MF "$@.d" -o ${OBJECTDIR}/StackOp.o StackOp.cpp
 
 # Subprojects
 .build-subprojects:
